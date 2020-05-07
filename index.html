@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gerador de Link para WhatsApp | Hendal Web</title>
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="gerador">
+            <div class="header">
+                <img src="./svg/hendal.svg" alt="Logotipo Hendal">
+                <a href="#" class="instrucoes">Como funciona ?</a>
+            </div>
+            <h1>Gerador de link<br>
+                para WhatsApp</h1>
+
+            <form action="">
+                <label for="numero">Número do WhatsApp</label>
+                <input type="text" name="numero" maxlength="14" placeholder="(DDD) X XXXX-XXXX" autocomplete="off"
+                    class="numero">
+                <label for="mensagem">Mensagem</label>
+                <input type="text" name="mensagem" placeholder="Escreva uma mensagem" autocomplete="off"
+                    class="mensagem">
+                <button class="gerar-link">GERAR LINK</button>
+                <small>Não guardamos nenhum dado informado.</small>
+            </form>
+        </div>
+        <div class="hendal">
+            <h1>Podemos ajudar<br> você conquistar<br> novos clientes.</h1>
+            <h2>Colocamos seu negócio no ambiente digital</h2>
+            <button class="redirect">QUERO SABER MAIS</button>
+
+            <a href="https://www.instagram.com/hendalweb_/" target="_blank">@hendalweb_</a>
+        </div>
+    </section>
+
+
+    <div class="modal-resultado" id="modal">
+        <div class="modal">
+            <button class="fechar">X</button>
+            <h3>Link gerado com sucesso !</h3>
+            <input type="text" class="link-pronto">
+
+            <div class="btns">
+                <a href="#" class="copiar">COPIAR</a>
+                <a href="#" class="novo-link" id="btn-novo">GERAR NOVO LINK</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal-erro">
+        <h3>Preencha os campos</h3>
+    </div>
+
+
+    <div class="modal-instrucoes" id="modal-infos">
+        <div class="modal">
+            <button class="fechar">X</button>
+            <h3>Como funciona</h3>
+            <ul class="lista-como-funciona">
+                <li><span>01.</span>Insira o número do WhatsApp</li>
+                <li><span>02.</span>Escreva a mensagem padrão que será exibida</li>
+                <li><span>03.</span>Clique em: "GERAR LINK"</li>
+                <li><span>04.</span>Copia e compatilhe</li>
+                <li><span>05.</span>Teste antes de usar</li>
+            </ul>
+            <small>O gerador de links para o WhatsApp é uma ótima ferramenta para ações de marketing ou relacionamento.
+                Com o
+                link para mensagens personalizadas do WhatsApp, você poderá utilizar em campanhas, redes sociais, email
+                marketing, banners e etc</small>
+        </div>
+    </div>
+
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
