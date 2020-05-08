@@ -62,7 +62,7 @@ function limpaNumero(numero) {
 
 function gerarLink(numero, mensagem) {
     mensagem = mensagem.replace(/[ ]/g, '%20');
-    return `https://api.whatsapp.com/send?phone=${numero}&text=${mensagem}`;
+    return `https://api.whatsapp.com/send?phone=55${numero}&text=${mensagem}`;
 }
 
 
