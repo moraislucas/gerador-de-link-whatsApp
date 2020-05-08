@@ -88,6 +88,7 @@ function novoLink(event) {
     numero.value = '';
     numero.focus();
     mensagem.value = '';
+    btnCopiar.innerText = 'COPIAR';
 }
 
 function instrucoes(event) {
